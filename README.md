@@ -37,8 +37,8 @@ in its CI. `gha-bill` makes that visible before you merge the workflow.
 ## Install
 
 ```console
-pipx install gha-bill          # or: uv tool install gha-bill
-# from source
+pip install git+https://github.com/indraoverflow/gha-bill   # PyPI release pending
+# or, from a clone
 git clone https://github.com/indraoverflow/gha-bill && cd gha-bill && pip install -e .
 ```
 
@@ -65,7 +65,7 @@ gha-bill scan [PATH] [--default-job-minutes 5] [--plan free|pro|team|enterprise]
 
 ```yaml
 - uses: actions/checkout@v4
-- run: pipx install gha-bill
+- run: pip install git+https://github.com/indraoverflow/gha-bill
 - run: gha-bill check . --budget 25   # exit 1 when the monthly estimate exceeds $25
 ```
 
