@@ -138,7 +138,7 @@ def _expand(lists: Dict[str, List[Any]]) -> List[Dict[str, Any]]:
     if not lists:
         return [{}]
     keys = list(lists)
-    return [dict(zip(keys, values)) for values in itertools.product(*(lists[k] for k in keys))]
+    return [dict(zip(keys, values, strict=False)) for values in itertools.product(*(lists[k] for k in keys))]
 
 
 def estimate_workflow(path: Path, root: Path, default_job_minutes: float = 5.0,
