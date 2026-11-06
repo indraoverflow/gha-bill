@@ -7,7 +7,7 @@ name = "gha-bill"
 version = "0.1.0"
 description = "Know what your GitHub Actions cost per workflow and per month."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Indra Prasetya" }]
 keywords = ["github-actions", "ci", "cost", "billing", "cli", "devops"]
@@ -41,7 +41,7 @@ addopts = "-q"
 
 [tool.ruff]
 line-length = 120
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B"]

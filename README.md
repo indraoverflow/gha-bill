@@ -42,7 +42,7 @@ pipx install gha-bill          # or: uv tool install gha-bill
 git clone https://github.com/indraoverflow/gha-bill && cd gha-bill && pip install -e .
 ```
 
-Requires Python 3.9+.
+Requires Python 3.10+ (CI covers 3.10 – 3.13).
 
 ## Usage
 
